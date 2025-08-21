@@ -9,10 +9,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Remove static export for Vercel
-  // output: 'export',
-  // trailingSlash: true,
-  // basePath: process.env.NODE_ENV === 'production' ? '/your-repo-name' : '',
+  // Vercel deployment configuration
+  experimental: {
+    optimizePackageImports: ['@radix-ui/react-icons', 'lucide-react'],
+  },
 }
 
 export default nextConfig
