@@ -9,9 +9,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  output: 'export',
-  trailingSlash: true,
-  basePath: process.env.NODE_ENV === 'production' ? '/your-repo-name' : '',
+  // Remove static export for Vercel
+  // output: 'export',
+  // trailingSlash: true,
+  // basePath: process.env.NODE_ENV === 'production' ? '/your-repo-name' : '',
 }
 
 export default nextConfig
